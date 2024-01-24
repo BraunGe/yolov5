@@ -643,8 +643,8 @@ def main(opt, callbacks=Callbacks()):
             "scale": (True, 0.0, 0.9),  # image scale (+/- gain)
             "shear": (True, 0.0, 10.0),  # image shear (+/- deg)
             "perspective": (True, 0.0, 0.001),  # image perspective (+/- fraction), range 0-0.001
-            "flipud": (True, 0.0, 1.0),  # image flip up-down (probability)
-            "fliplr": (True, 0.0, 1.0),  # image flip left-right (probability)
+            "flipud": (False, 0.0, 1.0),  # image flip up-down (probability)
+            "fliplr": (False, 0.0, 1.0),  # image flip left-right (probability)
             "mosaic": (True, 0.0, 1.0),  # image mixup (probability)
             "mixup": (True, 0.0, 1.0),  # image mixup (probability)
             "copy_paste": (True, 0.0, 1.0),
